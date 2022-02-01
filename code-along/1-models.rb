@@ -49,9 +49,12 @@ california_company.save
 
 puts california_company.inspect
 
-new_company = "Company.new"
+new_company = Company.new
 new_company.name = "Tesla, Inc."
 new_company.url = "https://tesla.com"
 new_company.city = "Palo Alto"
 new_company.state = "CA"
 new_company.save
+
+puts "There are now #{Company.all.count} companies."
+
